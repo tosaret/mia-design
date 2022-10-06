@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <nav class="navbar">
+          <div class="logos">
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo1.webp" alt="" />
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo2.png" alt="" />
+            </a>
+          </div>
+          <div class="search-login">
+            <form class="search-form form-inline d-none d-md-block">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Rechercher dans le catalogue"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">
+                <span class="material-symbols-outlined"> search </span>
+              </button>
+            </form>
+            <span class="login-form dropdown">
+              <a
+                href="#"
+                class="btn"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined"> account_circle </span>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right mt-3">
+                <a class="dropdown-item" href="#">Log In</a>
+                <a class="dropdown-item" href="#">Register</a>
+              </div>
+            </span>
+          </div>
+        </nav>
+      </div>
+
+      <!-- ARTICLE CONTENT-->
+      <div class="row">
+        <div class="main-content col-md-8">
+          <button
+            type="button"
+            id="sidebarCollapse"
+            class="btn d-none d-md-block"
+          >
+            <span class="material-symbols-outlined"> open_in_full </span>
+          </button>
+          <article class="article">
+            <div class="category mb-4">
+              <span class="bg-cat4">Entretiens</span>
+            </div>
+            <h2 class="mb-4">Les Elections</h2>
+            <p>
+              <strong>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </strong>
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for 'lorem ipsum' will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like).
+            </p>
+            <h5 class="mt-3">
+              L'ecetion du president de la Repoblique an suffrage universel
+              direct
+            </h5>
+            <img
+              src="./img/news-placeholder.png"
+              class="img-fluid my-3"
+              alt=""
+            />
+            <small>
+              <span class="title-badge bg-cat4"></span> L'ecetion du president
+              de la Repoblique an suffrage universel direct
+            </small>
+            <h5 class="mt-3">
+              L'ecetion du president de la Repoblique an suffrage universel
+              direct
+            </h5>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for 'lorem ipsum' will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like).
+            </p>
+            <p>
+              <a href="#">Various versions have evolved</a> over the years,
+              sometimes by accident, sometimes on purpose (injected humour and
+              the like).
+            </p>
+            <div class="video-container my-4">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/5MXTcO1veRQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for 'lorem ipsum' will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like).
+            </p>
+          </article>
+        </div>
+        <div class="sidebar col-md-4 pb-5">
+          <div class="categories-list">
+            <h5>Articles</h5>
+            <div class="accordion" id="categories">
+              <div class="item">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cat1"
+                  aria-expanded="true"
+                  aria-controls="cat1"
+                >
+                  <span class="cat-color bg-cat1"></span> Actualite
+                </button>
+
+                <div id="cat1" class="collapse" data-parent="#categories">
+                  <ul>
+                    <li><a href="#">L'ecetion du president</a></li>
+                    <li><a href="#">Repoblique an suffrage universel</a></li>
+                    <li><a href="#">Content here, content here</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cat2"
+                  aria-expanded="true"
+                  aria-controls="cat2"
+                >
+                  <span class="cat-color bg-cat2"></span> Evenement
+                </button>
+
+                <div id="cat2" class="collapse" data-parent="#categories">
+                  <ul>
+                    <li><a href="#">L'ecetion du president</a></li>
+                    <li><a href="#">Repoblique an suffrage universel</a></li>
+                    <li><a href="#">Content here, content here</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cat3"
+                  aria-expanded="true"
+                  aria-controls="cat3"
+                >
+                  <span class="cat-color bg-cat3"></span> Decryptage
+                </button>
+
+                <div id="cat3" class="collapse" data-parent="#categories">
+                  <ul>
+                    <li><a href="#">L'ecetion du president</a></li>
+                    <li><a href="#">Repoblique an suffrage universel</a></li>
+                    <li><a href="#">Content here, content here</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cat4"
+                  aria-expanded="true"
+                  aria-controls="cat4"
+                >
+                  <span class="cat-color bg-cat4"></span> Entretiens
+                </button>
+
+                <div id="cat4" class="collapse show" data-parent="#categories">
+                  <ul>
+                    <li><a href="#">L'ecetion du president</a></li>
+                    <li><a href="#">Repoblique an suffrage universel</a></li>
+                    <li><a href="#">Content here, content here</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cat5"
+                  aria-expanded="true"
+                  aria-controls="cat5"
+                >
+                  <span class="cat-color bg-cat5"></span> Chronique
+                </button>
+
+                <div id="cat5" class="collapse" data-parent="#categories">
+                  <ul>
+                    <li><a href="#">L'ecetion du president</a></li>
+                    <li><a href="#">Repoblique an suffrage universel</a></li>
+                    <li><a href="#">Content here, content here</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cat6"
+                  aria-expanded="true"
+                  aria-controls="cat6"
+                >
+                  <span class="cat-color bg-cat6"></span> Patrenariat
+                </button>
+
+                <div id="cat6" class="collapse" data-parent="#categories">
+                  <ul>
+                    <li><a href="#">L'ecetion du president</a></li>
+                    <li><a href="#">Repoblique an suffrage universel</a></li>
+                    <li><a href="#">Content here, content here</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF ARTICLE CONTENT-->
+
+      <footer class="footer mt-5">
+        <div class="row">
+          <div class="col-sm-3 mt-4">
+            <div class="logos">
+              <a href="#">
+                <img src="./img/logo1.webp" alt="" />
+              </a>
+              <a href="#">
+                <img src="./img/logo2.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-3 mt-4">
+            <h6>A propos</h6>
+            <ul>
+              <li><a href="#">Besoin d'aide?</a></li>
+              <li><a href="#">Nous contacter</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 mt-4">
+            <h6>Informations legales</h6>
+            <ul>
+              <li><a href="#">Politique de confidentiale</a></li>
+              <li><a href="#">Mentions legales</a></li>
+              <li><a href="#">Gestion des cookies</a></li>
+              <li><a href="#">Conditions generales d'utilisation</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 mt-4">
+            <h6>Abonnez-vous a la newsletter</h6>
+            <ul>
+              <li>
+                <a href="#">
+                  Et soyez informe des dernieres ressources et webinaries
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          $(this).toggleClass("active");
+          $(".sidebar").toggleClass("hidden");
+          $(".main-content").toggleClass("col-md-8").toggleClass("col-md-12");
+        });
+      });
+    </script>
+  </body>
+</html>
