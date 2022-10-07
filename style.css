@@ -43,6 +43,10 @@ strong {
   color: #fff;
 }
 
+.img-full {
+  width: 100%;
+}
+
 .title-badge {
   float: left;
   height: 100%;
