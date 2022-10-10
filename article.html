@@ -60,8 +60,15 @@
               </a>
 
               <div class="dropdown-menu dropdown-menu-right mt-3">
-                <a class="dropdown-item" href="#">Log In</a>
-                <a class="dropdown-item" href="#">Register</a>
+                <span class="dropdown-item-text">
+                  Connecté en tant qu'invité
+                </span>
+                <a href="login" target="_blank" class="dropdown-item">
+                  S'identifier
+                </a>
+                <a href="register" target="_blank" class="dropdown-item">
+                  Créez votre compte
+                </a>
               </div>
             </span>
           </div>
@@ -132,15 +139,13 @@
               the like).
             </p>
             <div class="video-container my-4">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/5MXTcO1veRQ"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <video controls>
+                <source
+                  src="https://joy.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0992_preview.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <p>
               It is a long established fact that a reader will be distracted by
@@ -174,7 +179,9 @@
 
                 <div id="cat1" class="collapse show" data-parent="#categories">
                   <ul>
-                    <li><a href="#">L'ecetion du president</a></li>
+                    <li>
+                      <a href="#" class="active">L'ecetion du president</a>
+                    </li>
                     <li><a href="#">Repoblique an suffrage universel</a></li>
                     <li><a href="#">Content here, content here</a></li>
                   </ul>

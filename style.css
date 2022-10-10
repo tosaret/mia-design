@@ -20,6 +20,27 @@ strong {
   box-shadow: none;
 }
 
+.btn-next {
+  float: right;
+  border: 1px solid #333;
+  padding: 2px 10px 0;
+  height: 30px;
+  border-radius: 0;
+}
+.btn-next:hover,
+.btn-next:focus {
+  background: #333;
+  color: #fff;
+  border-radius: 3px;
+}
+
+a img {
+  transition: all ease-in-out 250ms;
+}
+a img:hover {
+  transform: scale(1.01);
+}
+
 .bg-cat1 {
   background: #fbbf07;
 }
@@ -96,6 +117,9 @@ strong {
   color: #fff;
   line-height: 26px;
 }
+.search-form button:hover {
+  background: #333;
+}
 
 .login-form {
   margin-right: 1.5em;
@@ -105,13 +129,26 @@ strong {
   text-align: center;
   padding: 0;
   line-height: 40px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .login-form a span {
   font-size: 28px;
   color: #aaa;
   position: relative;
   top: 5px;
+  transition: all ease-in-out 250ms;
+}
+.login-form a:hover span {
+  color: #333;
+}
+.dropdown-menu {
+  min-width: 14em;
+  font-size: 13px;
+  text-align: center;
+  padding: 0;
+}
+.dropdown-menu a {
+  border-top: 1px solid #f0f0f0;
 }
 
 .news h2 span {
@@ -126,13 +163,6 @@ strong {
 
 .moment h4 span {
   padding: 0 10px;
-}
-.moment .btn-next {
-  float: right;
-  border: 1px solid #333;
-  padding: 2px 10px 0;
-  height: 30px;
-  border-radius: 0;
 }
 
 .dossiers {
@@ -157,32 +187,39 @@ strong {
   margin: 0 20px;
 }
 .carousel .slick-prev {
-  background: url(./img/arrow.png) center no-repeat;
-  background-size: 20px;
-  border: none;
+  background: url(./img/arrow.png) 9px center no-repeat;
+  background-size: 18px;
+  border: 1px solid #aaa;
+  border-radius: 35px;
   transform: rotate(180deg);
   font-size: 0px;
   text-indent: -9999px;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   opacity: 0.5;
   position: absolute;
   left: 5%;
-  top: calc(50% - 15px);
+  top: calc(50% - 25px);
+  transition: all ease-in-out 250ms;
 }
-
 .carousel .slick-next {
-  background: url(./img/arrow.png) center no-repeat;
-  background-size: 20px;
-  border: none;
+  background: url(./img/arrow.png) 9px center no-repeat;
+  background-size: 18px;
+  border: 1px solid #aaa;
+  border-radius: 35px;
   font-size: 0px;
   text-indent: -9999px;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   opacity: 0.5;
   position: absolute;
   right: 5%;
-  top: calc(50% - 15px);
+  top: calc(50% - 25px);
+  transition: all ease-in-out 250ms;
+}
+.carousel .slick-prev:hover,
+.carousel .slick-next:hover {
+  border-color: #000;
 }
 
 footer {
@@ -218,17 +255,8 @@ footer li a:focus {
   font-size: 16px;
 }
 
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.video-container video {
+  max-width: 100%;
 }
 
 .main-content,
@@ -276,6 +304,10 @@ footer li a:focus {
 .categories-list a {
   color: #333;
   font-size: 14px;
+}
+.categories-list a.active {
+  color: #000;
+  font-weight: 600;
 }
 .categories-list .cat-color {
   position: relative;
