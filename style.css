@@ -180,7 +180,7 @@ a img:hover {
   display: block;
   margin-top: 15px;
   text-transform: uppercase;
-  color: #333;
+  color: #666;
   font-weight: 600;
 }
 .carousel .slick-slide {
@@ -222,10 +222,23 @@ a img:hover {
   border-color: #000;
 }
 
+.carousel .title-badge {
+  transition: all ease-in-out 250ms;
+}
+.carousel a:hover .title {
+  color: #333;
+}
+.carousel a:hover .title-badge {
+  padding: 10px 12px;
+}
+
 footer {
   overflow: hidden;
   padding: 30px 15px 50px;
   border-top: 1px solid #f0f0f0;
+}
+footer .logos a:hover {
+  text-decoration: none;
 }
 footer .logos img {
   max-height: 40px;
